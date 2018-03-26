@@ -1,0 +1,49 @@
+.bg {
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index:-1;
+  width: 100%;
+  height: 100%;
+}
+.wrap {
+  font-size: 28rpx;
+  position:absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  height: 300rpx;
+}
+.item {
+  padding: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+.item input {
+  flex: 1;
+  background: white;
+  padding: 10rpx 20rpx;
+  color: #333;
+}
+.btn {
+  width: 280rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  margin-top: 120rpx;
+  background: rgba(255,255,255,0.5);
+  color: white;
+}
+.title {
+  color:white;
+  font-size:50rpx;
+  text-align: center;
+  margin-top: 156rpx;
+  width: 100%;
+}

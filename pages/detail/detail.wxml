@@ -1,0 +1,9 @@
+<view class="wrap">
+  <view class='item' wx:for="{{list}}">
+    <image src="{{item.userPic}}"></image>
+    <view class='txt'>
+      <text>{{item.nickName}}</text>
+      <text>{{item.remark}}</text>
+    </view>
+  </view>
+</view>

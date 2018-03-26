@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/needBook/needBook",
+    "pages/hasBook/hasBook",
+    "pages/getBook/getBook",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "点餐系统",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/needBook/needBook",
+        "text": "我要预约"
+      },
+      {
+        "pagePath": "pages/hasBook/hasBook",
+        "text": "已预约"
+      }
+    ],
+    "position": "top"
+  }
+}

@@ -1,0 +1,35 @@
+<image src="/images/icon_1.jpg" class="bg"></image>
+<view>
+  <view class="main">
+    <view class='left'>
+      <text>今天</text>
+    </view>
+    <view class='right'>
+      <view catchtap='onChoose' class='{{isChecked1[index] ? "checked": ""}} {{isDisabled1[index] ? "disabled" : ""}}' wx:for="{{todayList}}" data-choose="1" data-index="{{index}}" disabled="{{isDisabled1[index]}}">
+        <image src='/images/{{item.img}}.png'></image>
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="main">
+    <view class='left'>
+      <text>明天</text>
+    </view>
+    <view class='right'>
+      <view catchtap='onChoose' class='{{isChecked2[index] ? "checked": ""}}' wx:for="{{tomorrowList}}"  data-choose="2" data-index="{{index}}">
+        <image src='/images/{{item.img}}.png'></image>
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="main remark">
+  <view class='left'>
+    <text>备注</text>
+  </view>
+  <view class='right'>
+    <input placeholder="添加备注" bindinput="bindKeyInput"/>
+  </view>
+</view>
+
+<view class='btn' catchtap='onChecked'>提交预定</view>

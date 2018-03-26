@@ -1,0 +1,57 @@
+<view class="head">
+  <image src="/images/icon_5.jpg" class="bg"></image>
+  <view class='title'>
+    <text>点餐系统</text>
+    <text>Ordering system </text>
+  </view>
+</view>
+<view class='main'>
+  <text class='name'>今天  {{todayTime}}</text>
+  <view class='wrap'>
+    <swiper indicator-dots="{{true}}" autoplay="{{false}}" class='swiper'>
+        <swiper-item class="swiper-item">
+          <text>早餐预约人数</text>
+          <view class='circle {{isFixed[0] ? "actived" : ""}}' catchtap='onDetail' data-use="todayBList">
+            <text>{{todayBList.length}}</text>
+          </view>
+        </swiper-item>
+        <swiper-item class="swiper-item">
+          <text>中餐预约人数</text>
+          <view class='circle {{isFixed[1] ? "actived" : ""}}' catchtap='onDetail' data-use="todayMList">
+            <text>{{todayMList.length}}</text>
+          </view>
+        </swiper-item>
+        <swiper-item class="swiper-item">
+          <text>晚餐预约人数</text>
+          <view class='circle {{isFixed[2] ? "actived" : ""}}' catchtap='onDetail' data-use="todayNList">
+            <text>{{todayNList.length}}</text>
+          </view>
+        </swiper-item>
+    </swiper>
+  </view>
+</view>
+<view class='main'>
+  <text class='name'>明天  {{tomorrowTime}}</text>
+  <view class='wrap'>
+    <swiper indicator-dots="{{true}}" autoplay="{{false}}" class='swiper'>
+      <swiper-item class="swiper-item">
+          <text>早餐预约人数</text>
+          <view class='circle' catchtap='onDetail' data-use="tomorrowBList">
+            <text>{{tomorrowBList.length}}</text>
+          </view>
+        </swiper-item>
+        <swiper-item class="swiper-item">
+          <text>中餐预约人数</text>
+          <view class='circle' catchtap='onDetail' data-use="tomorrowMList">
+            <text>{{tomorrowMList.length}}</text>
+          </view>
+        </swiper-item>
+        <swiper-item class="swiper-item">
+          <text>晚餐预约人数</text>
+          <view class='circle' catchtap='onDetail' data-use="tomorrowNList">
+            <text>{{tomorrowNList.length}}</text>
+          </view>
+        </swiper-item>
+    </swiper>
+  </view>
+</view>

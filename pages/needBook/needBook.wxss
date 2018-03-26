@@ -1,0 +1,83 @@
+.bg {
+  width: 100%;
+  display:block;
+  height: 222rpx;
+}
+.main {
+  width: 86%;
+  background: #f2f2f2;
+  margin: 60rpx auto 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #fff;
+}
+.main.remark {
+  margin-top: 20rpx;
+  border-bottom: 0;
+}
+.main:last-child {
+  margin-top: 0;
+  border: 0;
+}
+.left {
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: bold;
+  padding: 0 30rpx;
+}
+.right {
+  border-left: 1rpx solid #fff;
+  padding: 50rpx 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex:1;
+}
+.remark .right {
+  padding: 20rpx 0;
+}
+.remark .right input {
+  background: white;
+  font-size: 28rpx;
+  flex: 1;
+  margin: 0 30rpx;
+  padding: 0 20rpx;
+}
+.right > view {
+  background: #fff;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 2rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+.right > view.checked {
+  background: #272826;
+}
+.right > view.disabled {
+  background: #e8e8e8;
+}
+.right > view > image {
+  width: 50rpx;
+  height: 45rpx;
+}
+.right > view > text {
+  font-size: 24rpx;
+  margin-top: 15rpx;
+  color: #272826;
+}
+.right > view.checked > text {
+  color: white;
+}
+.btn {
+ background: #272826;
+ color:white;
+ font-size: 28rpx;
+ text-align:center;
+ width: 50%;
+ margin: 70rpx auto 0;
+ height: 88rpx;
+ line-height: 88rpx;
+}

@@ -1,0 +1,31 @@
+<image src="/images/icon_1.jpg" class="bg" mode="widthFix"></image>
+<view class='mode' wx:if="{{todayList.length}}">
+ <view class='title'>
+  <text class='line'></text>
+  <text class='day'>今天</text>
+  <text class='line'></text>
+ </view>
+ <view class="main" wx:if="{{todayList.length}}">
+    <view wx:for="{{todayList}}" class='content'>
+      <view data-choose="2" data-index="{{index}}" class='img-wrap'>
+        <image src='/images/{{item.img}}.png'></image>
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='mode' wx:if="{{tomorrowList.length}}">
+ <view class='title'>
+  <text class='line'></text>
+  <text class='day'>明天</text>
+  <text class='line'></text>
+ </view>
+ <view class="main" wx:if="{{tomorrowList.length}}">
+    <view wx:for="{{tomorrowList}}" class='content'>
+      <view data-choose="2" data-index="{{index}}" class='img-wrap'>
+        <image src='/images/{{item.img}}.png'></image>
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,77 @@
+page {
+  background: #efefef;
+}
+.head {
+  width: 100%;
+  height: 275rpx;
+  position:relative;
+}
+.bg {
+  width: 100%;
+  display:block;
+  position:absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.title {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+}
+.title > text:first-child {
+  font-size: 36rpx;
+  text-align: center;
+}
+.title > text:last-child {
+  font-size: 24rpx;
+  margin-top: 30rpx;
+  text-align: center;
+}
+.main {
+  padding: 40rpx;
+}
+.name {
+  border-left: 6rpx solid #56c255;
+  padding-left: 20rpx;
+  font-size: 28rpx;
+}
+.swiper {
+  width: 100%;
+  height:400rpx;
+  background:white;
+  margin-top: 40rpx;
+}
+.swiper-item {
+  padding: 40rpx;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  font-size: 30rpx;
+  box-sizing: border-box;
+}
+.circle {
+  margin-top: 30rpx;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  background: #ffa22a;
+  border: 10rpx solid #ffd49c;
+  box-shadow: 5rpx 5rpx 5rpx #fff0dc,3rpx 3rpx 3rpx #ffffff inset;
+  text-align:center;
+  line-height: 200rpx;
+}
+.circle.actived {
+  background: #00a0e9;
+  border: 10rpx solid #bfebff;
+  box-shadow: 5rpx 5rpx 5rpx #def5ff,3rpx 3rpx 3rpx #ffffff inset;
+}
+.circle text {
+  font-size: 88rpx;
+  color: white;
+  font-weight: bold;
+}

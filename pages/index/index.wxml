@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<image src="/images/icon_0.jpg" class="bg"/>
+
+<!-- <view class="wrap">
+  <view class='item'>
+    <text>手机号：</text>
+    <input maxlength="11" type="number" bindinput="mobileInput"></input>
+  </view>
+  <button class="btn" catchtap='onSignIn'> 登陆 </button>
+</view> -->
+
+<view class='title'>
+  <text>Welcome</text>
+</view>
